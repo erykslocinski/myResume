@@ -33,8 +33,13 @@ header {
   background: linear-gradient(180deg, #00aaff, #0a415c);
 }
 
+header section.icons a {
+  color: f2f2f2;
+}
+
 header section {
   margin: 0 auto;
+  max-width: 640px;
 }
 
 header img {
@@ -51,6 +56,8 @@ header section p {
 h1 {
   margin: 1em 0;
   color: #f2f2f2;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 main {
