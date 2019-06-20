@@ -9,49 +9,74 @@ body
   line-height: 1.8em
   font-family: 'Raleway', sans-serif
 
-article
-  padding: 0 1em
-
-section
-  margin: 1em
-  padding: 1em
-
 header, main, footer 
   margin: 0 auto
 
 header
-  position: relative
-  padding: 2em
+  padding: 2rem
   text-align: center
   background: linear-gradient(180deg, hsl(200, 100%, 50%), hsl(200, 80%, 20%))
 
   section.icons a
-    color: f2f2f2
+    font-size: 2rem
+    color: #f2f2f2
+    margin: 0.5rem 0.5rem 1rem
 
-header section
-  margin: 0 auto
-  max-width: 640px
+  section.about p
+    margin: 0 auto
+    max-width: 640px
+    color: #f2f2f2
+    
+  img
+    height: 150px
+    width: 150px
+    border-radius: 50%
+    border: 2px solid #f2f2f2
 
-header img
-  height: 150px
-  width: 150px
-  border-radius: 50%
-  border: 2px solid #f2f2f2
-
-header section p
-  color: #f2f2f2
-
-h1
-  margin: 1em 0
-  color: #f2f2f2
-  font-size: 2rem
-  text-transform: uppercase
+  h1
+    margin: 1rem 0
+    color: #f2f2f2
+    font-size: 2rem
+    text-transform: uppercase
   
 main
   max-width: 1140px
 
-.school span
-  color: #A7B8BF
+  h3 
+    margin-top: 2rem
+    font-size: 2rem
+    font-weight: bold
+    text-transform: uppercase
+
+  section 
+    border-bottom: 1px solid #333
+    padding: 1rem 2rem
+    margin: 0 2rem
+
+    &:last-child
+      border-bottom: 0
+
+  article
+    padding: 1rem
+
+  .course
+    display: flex
+    flex-wrap: wrap
+
+  .course .title 
+    flex: 0 0 33.3%
+    max-width: 33%
+    color: #509e98
+
+  .course .descrition 
+    flex: 0 0 66.6%
+    max-width: 66.6%
+
+  .course .descrition p 
+    padding-left: 1em
+
+  .school span
+    color: #A7B8BF
 
 footer
- padding: 1em
+ padding: 1rem
