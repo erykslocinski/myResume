@@ -21,6 +21,7 @@ header
     font-size: 2rem
     color: #f2f2f2
     margin: 0.5rem 0.5rem 1rem
+    text-decoration: none
 
   section.about p
     margin: 0 auto
@@ -63,20 +64,56 @@ main
     display: flex
     flex-wrap: wrap
 
-  .course .title 
-    flex: 0 0 33.3%
-    max-width: 33%
-    color: #509e98
+    .title 
+      flex: 0 0 33.3%
+      max-width: 33%
+      color: hsl(200, 100%, 50%)
 
-  .course .descrition 
-    flex: 0 0 66.6%
-    max-width: 66.6%
+    .descrition 
+      flex: 0 0 66.6%
+      max-width: 66.6%
 
-  .course .descrition p 
-    padding-left: 1em
+      p 
+        padding-left: 1rem
+        
+  .skills
+    display: flex
+    flex-wrap: wrap
 
-  .school span
-    color: #A7B8BF
+    .column
+      padding: 1rem
+      flex: 0 0 33.33%
+    
+    ul
+      margin: 0
+      list-style-type: none
+
+      li 
+        padding-left: 1.5rem
+      
+      &.list-dashed li:before
+        content: "►"
+        padding-right: 0.5rem
+        color: hsl(200, 100%, 50%)
+
+    h4 
+      margin-bottom: 10px
+
+  .school 
+    font-size: 1.6rem
+    font-weight: bold
+
+    span
+      font-size: 1.2rem
+      padding-right: 6px
+      font-style: italic
+      color: hsl(200, 100%, 50%)
+
+  .description
+    margin-left: 1rem
 
 footer
- padding: 1rem
+  padding: 1rem
+  color: #f2f2f2
+  text-align: center
+  background: linear-gradient(180deg, hsl(200, 100%, 50%), hsl(200, 80%, 20%))
